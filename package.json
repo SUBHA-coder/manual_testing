@@ -1,0 +1,29 @@
+{
+  "name": "login-test-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "auth.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "jest-html-reporter": "^4.3.0"
+  },
+  "jest": {
+    "reporters": [
+      "default",
+      [
+        "jest-html-reporter",
+        {
+          "pageTitle": "Login Test Report",
+          "outputPath": "test-report.html"
+        }
+      ]
+    ]
+  }
+}
